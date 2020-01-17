@@ -5,4 +5,4 @@ services:
 before_install:
   - docker build -t shantanu616/devops_planet -f Dockerfile.dev .
 script:
-  - echo "Skipping"
+  - docker run shantanu616/devops_planet npm run test -- -- coverage
