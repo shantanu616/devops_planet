@@ -1,0 +1,8 @@
+language: generic
+sudo: required
+services:
+  - docker
+before_install:
+  - docker build -t shantanu616/devops_planet -f Dockerfile.dev .
+script:
+  - echo "Skipping"
