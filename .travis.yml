@@ -5,4 +5,4 @@ services:
 before_install:
   - docker build -t shantanu616/devops_planet -f Dockerfile.dev .
 script:
-  - docker run shantanu616/devops_planet npm run test -- -- coverage
+  - docker run -e CI=true shantanu616/devops_planet npm run test
